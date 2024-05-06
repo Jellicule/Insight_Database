@@ -1,0 +1,11 @@
+{
+  "title": "Query with too many results",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "COLUMNS": ["sections_dept", "sections_avg", "sections_uuid", "sections_year"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "ResultTooLargeError"
+}

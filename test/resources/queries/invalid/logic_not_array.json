@@ -1,0 +1,20 @@
+{
+  "title": "AND is not an array",
+  "input": {
+    "WHERE": {
+      "AND": {
+        "GT": {
+          "sections_avg": 97
+        },
+        "IS": {
+          "sections_dept": "CPSC"
+        }
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

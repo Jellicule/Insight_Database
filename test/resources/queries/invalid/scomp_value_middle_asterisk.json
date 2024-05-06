@@ -1,0 +1,15 @@
+{
+  "title": "IS asterisk not at start or end",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "sections_dept": "H*Y"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

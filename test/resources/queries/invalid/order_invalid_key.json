@@ -1,0 +1,12 @@
+{
+  "title": "ORDER contains an invalid key",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"],
+      "ORDER": "sections_dep"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

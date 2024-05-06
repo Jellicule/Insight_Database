@@ -1,0 +1,13 @@
+{
+  "title": "IS is not an object",
+  "input": {
+    "WHERE": {
+      "IS": "*HEY"
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

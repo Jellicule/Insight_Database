@@ -1,0 +1,18 @@
+{
+  "title": "WHERE contains an unexpected property",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "sections_avg": 97
+      },
+      "LT": {
+        "sections_avg": 99
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

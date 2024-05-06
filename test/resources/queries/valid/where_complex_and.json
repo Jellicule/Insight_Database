@@ -1,0 +1,89 @@
+{
+  "title": "Complex AND filter",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "sections_dept": "c*"
+          }
+        },
+        {
+          "AND": [
+            {
+              "LT": {
+                "sections_avg": 60
+              }
+            },
+            {
+              "GT": {
+                "sections_year": 0
+              }
+            }
+          ]
+        },
+        {
+          "GT": {
+            "sections_avg": 40
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_dept", "sections_avg", "sections_year"]
+    }
+  },
+  "ordered": false,
+  "errorExpected": false,
+  "expected": [
+    { "sections_dept": "chbe", "sections_avg": 56.96, "sections_year": 2007 },
+    { "sections_dept": "chbe", "sections_avg": 56.96, "sections_year": 1900 },
+    { "sections_dept": "chbe", "sections_avg": 59.35, "sections_year": 2012 },
+    { "sections_dept": "chbe", "sections_avg": 59.35, "sections_year": 1900 },
+    { "sections_dept": "chbe", "sections_avg": 50, "sections_year": 2012 },
+    { "sections_dept": "chbe", "sections_avg": 42, "sections_year": 2011 },
+    { "sections_dept": "chbe", "sections_avg": 44.88, "sections_year": 1900 },
+    { "sections_dept": "chbe", "sections_avg": 59.8, "sections_year": 2009 },
+    { "sections_dept": "chbe", "sections_avg": 59.8, "sections_year": 1900 },
+    { "sections_dept": "chem", "sections_avg": 59.83, "sections_year": 2013 },
+    { "sections_dept": "chem", "sections_avg": 57.25, "sections_year": 2012 },
+    { "sections_dept": "chem", "sections_avg": 58.16, "sections_year": 2014 },
+    { "sections_dept": "chem", "sections_avg": 58.16, "sections_year": 1900 },
+    { "sections_dept": "chem", "sections_avg": 59.83, "sections_year": 2008 },
+    { "sections_dept": "chem", "sections_avg": 59.83, "sections_year": 1900 },
+    { "sections_dept": "chem", "sections_avg": 56.89, "sections_year": 2009 },
+    { "sections_dept": "chem", "sections_avg": 56.89, "sections_year": 1900 },
+    { "sections_dept": "chem", "sections_avg": 59.45, "sections_year": 2009 },
+    { "sections_dept": "chem", "sections_avg": 58.6, "sections_year": 2015 },
+    { "sections_dept": "chem", "sections_avg": 56.2, "sections_year": 2015 },
+    { "sections_dept": "chem", "sections_avg": 55.31, "sections_year": 2009 },
+    { "sections_dept": "chem", "sections_avg": 55.31, "sections_year": 1900 },
+    { "sections_dept": "chem", "sections_avg": 53, "sections_year": 2016 },
+    { "sections_dept": "chem", "sections_avg": 59.36, "sections_year": 2012 },
+    { "sections_dept": "chem", "sections_avg": 59.8, "sections_year": 2012 },
+    { "sections_dept": "chem", "sections_avg": 59, "sections_year": 2012 },
+    { "sections_dept": "chem", "sections_avg": 42.5, "sections_year": 2015 },
+    { "sections_dept": "chem", "sections_avg": 58.75, "sections_year": 2013 },
+    { "sections_dept": "chem", "sections_avg": 58.75, "sections_year": 1900 },
+    { "sections_dept": "chem", "sections_avg": 59.66, "sections_year": 2014 },
+    { "sections_dept": "chem", "sections_avg": 59.66, "sections_year": 1900 },
+    { "sections_dept": "chem", "sections_avg": 59.83, "sections_year": 2011 },
+    { "sections_dept": "chem", "sections_avg": 59.83, "sections_year": 1900 },
+    { "sections_dept": "civl", "sections_avg": 58.62, "sections_year": 2009 },
+    { "sections_dept": "civl", "sections_avg": 55.75, "sections_year": 2015 },
+    { "sections_dept": "civl", "sections_avg": 56.5, "sections_year": 2011 },
+    { "sections_dept": "civl", "sections_avg": 49.25, "sections_year": 2011 },
+    { "sections_dept": "civl", "sections_avg": 55.86, "sections_year": 2009 },
+    { "sections_dept": "civl", "sections_avg": 59.5, "sections_year": 2008 },
+    { "sections_dept": "comm", "sections_avg": 46.71, "sections_year": 2009 },
+    { "sections_dept": "comm", "sections_avg": 51.43, "sections_year": 2009 },
+    { "sections_dept": "comm", "sections_avg": 49.07, "sections_year": 1900 },
+    { "sections_dept": "comm", "sections_avg": 56.63, "sections_year": 2008 },
+    { "sections_dept": "comm", "sections_avg": 58.57, "sections_year": 2010 },
+    { "sections_dept": "comm", "sections_avg": 58.91, "sections_year": 2010 },
+    { "sections_dept": "comm", "sections_avg": 58.72, "sections_year": 1900 },
+    { "sections_dept": "comm", "sections_avg": 57, "sections_year": 2011 },
+    { "sections_dept": "comm", "sections_avg": 57.25, "sections_year": 2011 },
+    { "sections_dept": "comm", "sections_avg": 57.18, "sections_year": 1900 }
+  ]
+}

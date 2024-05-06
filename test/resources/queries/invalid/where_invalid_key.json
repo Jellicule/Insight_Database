@@ -1,0 +1,13 @@
+{
+  "title": "WHERE given an invalid key",
+  "input": {
+    "WHERE": {
+      "HELLO": {}
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

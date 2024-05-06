@@ -1,0 +1,12 @@
+{
+  "title": "ORDER is not a string",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"],
+      "ORDER": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

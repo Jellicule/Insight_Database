@@ -1,0 +1,15 @@
+{
+  "title": "IS comparison isn't a string",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "sections_dept": 12
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

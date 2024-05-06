@@ -1,0 +1,12 @@
+{
+  "title": "Input has an unexpected property",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    },
+    "COLUMNS": ["sections_avg"]
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

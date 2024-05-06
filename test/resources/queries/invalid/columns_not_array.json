@@ -1,0 +1,13 @@
+{
+  "title": "COLUMNS is not an array",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "COLUMNS": {
+        "sections_avg": true
+      }
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

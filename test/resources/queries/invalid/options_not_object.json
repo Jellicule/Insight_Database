@@ -1,0 +1,9 @@
+{
+  "title": "OPTIONS is not an object",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": "sections_avg"
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

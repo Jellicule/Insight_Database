@@ -1,0 +1,11 @@
+{
+  "title": "Query with multiple ids",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "COLUMNS": ["sections_dept", "sections_avg", "sectionss_uuid", "bananas_year"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

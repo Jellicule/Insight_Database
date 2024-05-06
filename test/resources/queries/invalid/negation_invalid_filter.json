@@ -1,0 +1,17 @@
+{
+  "title": "NOT given an invalid filter",
+  "input": {
+    "WHERE": {
+      "NOT": {
+        "GTT": {
+          "sections_avg": 97
+        }
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

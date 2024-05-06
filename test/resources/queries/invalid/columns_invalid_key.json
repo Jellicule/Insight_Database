@@ -1,0 +1,11 @@
+{
+  "title": "COLUMNS contains an invalid key",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "COLUMNS": ["sections_av"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

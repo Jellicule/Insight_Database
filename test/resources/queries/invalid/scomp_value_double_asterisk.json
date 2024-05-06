@@ -1,0 +1,15 @@
+{
+  "title": "IS correct asterisk and incorrect asterisk",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "sections_dept": "**H"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

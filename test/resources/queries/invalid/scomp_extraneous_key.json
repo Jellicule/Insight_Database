@@ -1,0 +1,16 @@
+{
+  "title": "IS contains an unexpected property",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "sections_dept": "*C*",
+        "sections_title": "Banana"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "GT contains an unexpected property",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "sections_avg": 95,
+        "year": 1996
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

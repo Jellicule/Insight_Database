@@ -1,0 +1,471 @@
+{
+	"title": "Aggregation",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "cpsc"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": ["sections_title", "overallAvg", "maxAvg", "minAvg", "sumAvg", "countAvg"]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": ["sections_title"],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "sections_avg"
+					}
+				},
+				{
+					"maxAvg": {
+						"MAX": "sections_avg"
+					}
+				},
+				{
+					"minAvg": {
+						"MIN": "sections_avg"
+					}
+				},
+				{
+					"sumAvg": {
+						"SUM": "sections_avg"
+					}
+				},
+				{
+					"countAvg": {
+						"COUNT": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"ordered": false,
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_title": "comptn, progrmng",
+			"overallAvg": 74.41,
+			"maxAvg": 85.46,
+			"minAvg": 67.79,
+			"sumAvg": 4315.79,
+			"countAvg": 55
+		},
+		{
+			"sections_title": "model comptn",
+			"overallAvg": 75.54,
+			"maxAvg": 84.56,
+			"minAvg": 67.13,
+			"sumAvg": 4608.02,
+			"countAvg": 53
+		},
+		{
+			"sections_title": "sftwr constructn",
+			"overallAvg": 73.99,
+			"maxAvg": 86.15,
+			"minAvg": 68.13,
+			"sumAvg": 3403.46,
+			"countAvg": 40
+		},
+		{
+			"sections_title": "intro comp sys",
+			"overallAvg": 74.04,
+			"maxAvg": 81.76,
+			"minAvg": 64.62,
+			"sumAvg": 3183.71,
+			"countAvg": 36
+		},
+		{
+			"sections_title": "basic alg&data",
+			"overallAvg": 74.49,
+			"maxAvg": 86.47,
+			"minAvg": 65.1,
+			"sumAvg": 3873.43,
+			"countAvg": 45
+		},
+		{
+			"sections_title": "dta&alg elec eng",
+			"overallAvg": 74.46,
+			"maxAvg": 75.82,
+			"minAvg": 72.4,
+			"sumAvg": 744.64,
+			"countAvg": 5
+		},
+		{
+			"sections_title": "basics comp syst",
+			"overallAvg": 69.17,
+			"maxAvg": 71.45,
+			"minAvg": 67.91,
+			"sumAvg": 553.36,
+			"countAvg": 4
+		},
+		{
+			"sections_title": "comptng life sci",
+			"overallAvg": 81.84,
+			"maxAvg": 88,
+			"minAvg": 71,
+			"sumAvg": 1145.72,
+			"countAvg": 7
+		},
+		{
+			"sections_title": "num comp alg prb",
+			"overallAvg": 75.51,
+			"maxAvg": 79.46,
+			"minAvg": 68.64,
+			"sumAvg": 1359.2,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "num approx/discr",
+			"overallAvg": 72.76,
+			"maxAvg": 77.62,
+			"minAvg": 68.35,
+			"sumAvg": 1309.7,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "intr rel databse",
+			"overallAvg": 76.3,
+			"maxAvg": 85.5,
+			"minAvg": 71.89,
+			"sumAvg": 3128.23,
+			"countAvg": 31
+		},
+		{
+			"sections_title": "intr sftwr eng",
+			"overallAvg": 78.25,
+			"maxAvg": 84.6,
+			"minAvg": 72.27,
+			"sumAvg": 3051.73,
+			"countAvg": 33
+		},
+		{
+			"sections_title": "programmng langs",
+			"overallAvg": 77.25,
+			"maxAvg": 84.39,
+			"minAvg": 72.83,
+			"sumAvg": 1390.44,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "func & logic prg",
+			"overallAvg": 80.71,
+			"maxAvg": 85.13,
+			"minAvg": 76.52,
+			"sumAvg": 1614.16,
+			"countAvg": 10
+		},
+		{
+			"sections_title": "comp hard&os",
+			"overallAvg": 73.98,
+			"maxAvg": 82.27,
+			"minAvg": 70.46,
+			"sumAvg": 2589.4,
+			"countAvg": 31
+		},
+		{
+			"sections_title": "comp graphics",
+			"overallAvg": 76.78,
+			"maxAvg": 82.58,
+			"minAvg": 67.85,
+			"sumAvg": 2073.03,
+			"countAvg": 27
+		},
+		{
+			"sections_title": "internet comp",
+			"overallAvg": 72.57,
+			"maxAvg": 76.87,
+			"minAvg": 68.54,
+			"sumAvg": 1959.28,
+			"countAvg": 27
+		},
+		{
+			"sections_title": "softwr eng proj",
+			"overallAvg": 84.52,
+			"maxAvg": 88.39,
+			"minAvg": 78.93,
+			"sumAvg": 1521.28,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "intr alg dsgn&an",
+			"overallAvg": 70.09,
+			"maxAvg": 73.38,
+			"minAvg": 66.34,
+			"sumAvg": 2313.12,
+			"countAvg": 31
+		},
+		{
+			"sections_title": "artificial intel",
+			"overallAvg": 73.11,
+			"maxAvg": 78.34,
+			"minAvg": 67.48,
+			"sumAvg": 2266.48,
+			"countAvg": 28
+		},
+		{
+			"sections_title": "machine lrn mine",
+			"overallAvg": 75.69,
+			"maxAvg": 82.66,
+			"minAvg": 68.4,
+			"sumAvg": 1513.82,
+			"countAvg": 10
+		},
+		{
+			"sections_title": "hum-com interact",
+			"overallAvg": 78.47,
+			"maxAvg": 81.18,
+			"minAvg": 73.3,
+			"sumAvg": 1491,
+			"countAvg": 11
+		},
+		{
+			"sections_title": "adv rel databse",
+			"overallAvg": 74.32,
+			"maxAvg": 81.82,
+			"minAvg": 68.76,
+			"sumAvg": 2006.77,
+			"countAvg": 27
+		},
+		{
+			"sections_title": "adv software eng",
+			"overallAvg": 77.11,
+			"maxAvg": 80.18,
+			"minAvg": 74.04,
+			"sumAvg": 1388,
+			"countAvg": 8
+		},
+		{
+			"sections_title": "compiler constrc",
+			"overallAvg": 80.18,
+			"maxAvg": 86,
+			"minAvg": 72.24,
+			"sumAvg": 1443.3,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "adv opertng sysm",
+			"overallAvg": 70.93,
+			"maxAvg": 73.37,
+			"minAvg": 68.79,
+			"sumAvg": 1418.58,
+			"countAvg": 10
+		},
+		{
+			"sections_title": "distrbt'd systms",
+			"overallAvg": 74.9,
+			"maxAvg": 81.18,
+			"minAvg": 71.75,
+			"sumAvg": 1348.18,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "parallel comput",
+			"overallAvg": 80.51,
+			"maxAvg": 86.04,
+			"minAvg": 75.61,
+			"sumAvg": 483.04,
+			"countAvg": 3
+		},
+		{
+			"sections_title": "adv alg dsgn&anl",
+			"overallAvg": 72.24,
+			"maxAvg": 78.32,
+			"minAvg": 68.77,
+			"sumAvg": 1300.28,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "theory comptg",
+			"overallAvg": 74.91,
+			"maxAvg": 79.88,
+			"minAvg": 69.47,
+			"sumAvg": 1348.36,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "intel systems",
+			"overallAvg": 73.01,
+			"maxAvg": 78.3,
+			"minAvg": 66.13,
+			"sumAvg": 1314.16,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "computer vision",
+			"overallAvg": 73.93,
+			"maxAvg": 77.68,
+			"minAvg": 71.8,
+			"sumAvg": 1330.7,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "comptr & society",
+			"overallAvg": 77.39,
+			"maxAvg": 80.55,
+			"minAvg": 72.75,
+			"sumAvg": 1702.58,
+			"countAvg": 11
+		},
+		{
+			"sections_title": "hmn-cp interactn",
+			"overallAvg": 78.84,
+			"maxAvg": 80.62,
+			"minAvg": 77.43,
+			"sumAvg": 788.38,
+			"countAvg": 5
+		},
+		{
+			"sections_title": "alg in bioin",
+			"overallAvg": 80.86,
+			"maxAvg": 91.25,
+			"minAvg": 73.18,
+			"sumAvg": 1455.46,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "honours thesis",
+			"overallAvg": 90.38,
+			"maxAvg": 93.5,
+			"minAvg": 83.08,
+			"sumAvg": 1446.06,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "student seminar",
+			"overallAvg": 89.77,
+			"maxAvg": 92.4,
+			"minAvg": 84.5,
+			"sumAvg": 1346.55,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "fund alg dsgn&an",
+			"overallAvg": 83.96,
+			"maxAvg": 86.33,
+			"minAvg": 78.87,
+			"sumAvg": 1511.2,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "thry of automata",
+			"overallAvg": 89.77,
+			"maxAvg": 94,
+			"minAvg": 83.8,
+			"sumAvg": 1077.3,
+			"countAvg": 6
+		},
+		{
+			"sections_title": "artif intell 1",
+			"overallAvg": 82.96,
+			"maxAvg": 86.2,
+			"minAvg": 81.06,
+			"sumAvg": 1161.48,
+			"countAvg": 7
+		},
+		{
+			"sections_title": "computl ling 1",
+			"overallAvg": 88.08,
+			"maxAvg": 94.5,
+			"minAvg": 79.25,
+			"sumAvg": 1057,
+			"countAvg": 6
+		},
+		{
+			"sections_title": "software eng",
+			"overallAvg": 87.44,
+			"maxAvg": 91.79,
+			"minAvg": 82.5,
+			"sumAvg": 874.42,
+			"countAvg": 5
+		},
+		{
+			"sections_title": "prog lang princ",
+			"overallAvg": 86.02,
+			"maxAvg": 88,
+			"minAvg": 84.25,
+			"sumAvg": 860.2,
+			"countAvg": 5
+		},
+		{
+			"sections_title": "intgrt sys desgn",
+			"overallAvg": 82.7,
+			"maxAvg": 89.09,
+			"minAvg": 64,
+			"sumAvg": 1323.14,
+			"countAvg": 8
+		},
+		{
+			"sections_title": "comput robotics",
+			"overallAvg": 81.8,
+			"maxAvg": 83.36,
+			"minAvg": 79.88,
+			"sumAvg": 490.78,
+			"countAvg": 3
+		},
+		{
+			"sections_title": "para algs & arch",
+			"overallAvg": 85.06,
+			"maxAvg": 87.78,
+			"minAvg": 82.65,
+			"sumAvg": 1190.82,
+			"countAvg": 7
+		},
+		{
+			"sections_title": "artif intell 2",
+			"overallAvg": 85.16,
+			"maxAvg": 90.71,
+			"minAvg": 82.55,
+			"sumAvg": 681.3,
+			"countAvg": 4
+		},
+		{
+			"sections_title": "comp comm protcl",
+			"overallAvg": 87.48,
+			"maxAvg": 91.22,
+			"minAvg": 83.78,
+			"sumAvg": 699.88,
+			"countAvg": 4
+		},
+		{
+			"sections_title": "machine learn i",
+			"overallAvg": 85.87,
+			"maxAvg": 91.22,
+			"minAvg": 81.12,
+			"sumAvg": 1373.92,
+			"countAvg": 8
+		},
+		{
+			"sections_title": "phy user intfc",
+			"overallAvg": 85.78,
+			"maxAvg": 89.75,
+			"minAvg": 82.07,
+			"sumAvg": 1029.4,
+			"countAvg": 6
+		},
+		{
+			"sections_title": "hmn-cmpt intract",
+			"overallAvg": 84.31,
+			"maxAvg": 88,
+			"minAvg": 81.64,
+			"sumAvg": 1517.6,
+			"countAvg": 9
+		},
+		{
+			"sections_title": "info visualizatn",
+			"overallAvg": 88.58,
+			"maxAvg": 88.68,
+			"minAvg": 88.47,
+			"sumAvg": 354.3,
+			"countAvg": 2
+		},
+		{
+			"sections_title": "m.sc major essay",
+			"overallAvg": 85.75,
+			"maxAvg": 95,
+			"minAvg": 75,
+			"sumAvg": 1457.77,
+			"countAvg": 12
+		}
+	]
+}

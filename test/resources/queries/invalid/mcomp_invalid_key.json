@@ -1,0 +1,15 @@
+{
+  "title": "GT given an invalid key",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "sections_av": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": ["sections_avg"]
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}
