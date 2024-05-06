@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
+			crossorigin
+			async
+			data-callback="initMapKit"
+			data-libraries="map,annotations"
+			data-initial-token="%VITE_MAPKIT_TOKEN%"
+		></script>
+		<title>Campus Explorer</title>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="module" src="/src/app.tsx"></script>
+	</body>
+</html>
